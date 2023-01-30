@@ -13,4 +13,8 @@ for line in lines:
         count += 1
     elif (elves[0][0] >= elves[1][0] and elves[0][1] <= elves[1][1]):
         count += 1
+    elif (elves[0][0] <= elves[1][0] and elves[0][1] >= elves[1][0]):
+        count += 1
+    elif (elves[0][0] <= elves[1][1] and elves[0][1] >= elves[1][1]):
+        count += 1
 print(count)
